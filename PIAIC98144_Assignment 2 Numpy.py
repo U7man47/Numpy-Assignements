@@ -313,6 +313,7 @@ def function18():
 
     #Expected output: 3
 
+
 # Task19
 def function19():
     #Create variable "X" from 1,25 (both are included) range values
@@ -322,10 +323,10 @@ def function19():
     # then create variable "b" with value equal to 5
     # Now return output as "(X*W)+b:
 
-    X =   # Write your code here
-    W =   # Write your code here 
-    b =   # Write your code here
-    output =    # Write your code here
+    X =   np.arange(1,26).reshape((5,5))
+    W =   np.asarray(X).T 
+    b =   5
+    output =  (X*W)+b
     return output
     #expected output
     """
@@ -344,6 +345,7 @@ def function20():
     def abc(x):
         return x*2+3-2
 
-    return #Write your Code here
+    return abc(x)
 #Expected Output: array([ 3,  5,  7,  9, 11, 13, 15, 17, 19, 21])
 #--------------------------X-----------------------------X-----------------------------X----------------------------X---------------------
+
